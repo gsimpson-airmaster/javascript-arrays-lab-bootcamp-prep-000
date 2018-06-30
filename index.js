@@ -19,9 +19,10 @@ function destructivelyRemoveFirstKitten() {
 }
 
 function appendKitten(s) {
-  return kittens.concat(s)
+  return [...kittens, s]
 }
 
 function prependKittens(s) {
-  return
+  return [s,...kittens]
 }
+
